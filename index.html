@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="css/responsive.css">
 	</head>
 
-	<body>
+	<body oncontextmenu="return false">
 		<!-- ========= starts container section ========== -->
 		<div class="container">
 			<!-- ========= starts aside section ========== -->
@@ -442,5 +442,18 @@
 		</div>
 		</div>
 		<!-- ========= ends container section ========== -->
+
+
+	
+	<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+	<!-- Page Source code hide JS -->
+	<script type="text/javascript">
+		document.addEventListener("keydown", (e) => {
+			 if (e.ctrlKey || e.keyCode==123) {
+			  e.stopPropagation();
+			  e.preventDefault();
+			 }
+		});
+	</script>
 	</body>
 </html>
